@@ -1,4 +1,4 @@
 # shell-scripts
 A collection of shell scripts.
 
-Run each command with `bash ./file_name.sh`
+Run a script with the command `bash ./file_name.sh`
