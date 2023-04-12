@@ -28,9 +28,9 @@ sed -i '' '3s/^/import { Router } from "@solidjs\/router";/' src/index.tsx
 sed -i '' "s#<App />#<Router><App /></Router>#" src/index.tsx
 
 # suid setup
-# npm i suid @suid/material @suid/icons-material @suid/vite-plugin
-# sed -i '' '3s/^/import suidPlugin from "@suid\/vite-plugin";\n/' vite.config.ts
-# sed -i '' "s#plugins: \[solidPlugin()\],#plugins: \[suidPlugin(), solidPlugin()\],#" vite.config.ts
+npm i suid @suid/material @suid/icons-material @suid/vite-plugin
+sed -i '' '3s/^/import suidPlugin from "@suid\/vite-plugin";\n/' vite.config.ts
+sed -i '' "s#plugins: \[solidPlugin()\],#plugins: \[suidPlugin(), solidPlugin()\],#" vite.config.ts
 
 # tailwindcss setup
 npm i -D tailwindcss postcss autoprefixer
